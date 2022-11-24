@@ -26,6 +26,7 @@ nav{
  justify-content: space-between;
  padding-left: 4rem;
  padding-right: 4rem;
+ position: fixed;
 }
 nav h1{
     color: #ffffff;
@@ -320,4 +321,7 @@ color: #fff;
 }
 .footer i{
     scale: 2;
+}
+.project-navigator i{
+    color: var(--second-color);
 }
