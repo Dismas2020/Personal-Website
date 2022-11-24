@@ -228,6 +228,8 @@ color: #fff;
     overflow-x: scroll;
     padding-bottom: 1rem;
     gap: 4rem;
+    padding-right: 17px;
+    box-sizing: content-box;
     
 }
 .project h1{
