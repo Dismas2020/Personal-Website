@@ -27,6 +27,7 @@ nav{
  padding-left: 4rem;
  padding-right: 4rem;
  position: fixed;
+ z-index: 50;
 }
 nav h1{
     color: #ffffff;

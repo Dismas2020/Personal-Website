@@ -27,6 +27,7 @@ nav{
  padding-left: 4rem;
  padding-right: 4rem;
  position: fixed;
+ z-index: 50;
 }
 nav h1{
     color: #ffffff;
@@ -65,16 +66,31 @@ a.active, a:hover{
 
 .about-me{
     width: 80%;
-    padding-left:6rem;
+    padding-left:10rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+   padding-top: 2rem;
+    
+    
 }
 .texts{
     display: flex;
     flex-direction: column;
     gap: 2rem;
     width: 30rem;
+    font-family: "poppins", sans-serif;
+}
+.texts h2{
+    font-size: 46px;
+}
+.texts h4{
+    font-size: 24px;
+    font-weight: 400;
+}
+.texts p{
+    color: #5c5b5b;
+    font-weight: 300;
 }
 
 .about-image img{
@@ -84,8 +100,95 @@ a.active, a:hover{
     border-radius: 40% ;
    
 }
+/* Start of skills section */
 
+.skills-lever{
+    display: flex;
+    justify-content: space-between;
+    padding: 10rem;
+    padding-top: 0;
+}
+.fields{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 
+.html {
+    width: 300px;
+    height: 6px;
+    background-color: var(--second-color);
+}
+.html .percentage{
+    width: 90%;
+    height: 100%;
+    background-color: var(--main-color);
+}
+.html-texts{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "poppins",sans-serif;
+    font-size: 20px;
+}
+.CSS {
+    width: 300px;
+    height: 6px;
+    background-color: var(--second-color);
+}
+.CSS .percentage{
+    width: 80%;
+    height: 100%;
+    background-color: var(--main-color);
+}
+.CSS-texts{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "poppins",sans-serif;
+    font-size: 20px;
+}
+.Javascript .percentage{
+    width: 85%;
+    height: 100%;
+    background-color: var(--main-color);
+}
+.Javascript {
+    width: 300px;
+    height: 6px;
+    background-color: var(--second-color);
+}
+.Javascript-texts{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "poppins", sans-serif;
+    font-size: 20px;
+}
+.fields{
+    font-family: "poppins", sans-serif;
+    font-size: 18px;
+}
+
+.skills-lever button{
+    width: 13rem;
+    height: 5rem;
+    background-color: #fff;
+    border-radius: 2rem;
+    color: var(--main-color);
+    font-weight: 600;
+    border: 1px solid var(--main-color);
+    margin-top: 6rem;
+    font-family: "poppins", sans-serif;
+    font-size: 24px;
+    
+}
+.skills-lever button:hover{
+    background-color: var(--main-color);
+    border: 1px solid #fff;
+    color: #fff;
+    
+}
 /* Footer */
 .footer {
     background-color: var(--third-color);
