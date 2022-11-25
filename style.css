@@ -19,7 +19,7 @@ body{
 /* navbar styles */
 
 nav{
- background: var(--main-color);
+ background: var(--main-color); 
  height: 80px;
  width: 100%;
  display: flex;
