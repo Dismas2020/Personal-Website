@@ -27,6 +27,7 @@ nav{
  padding-left: 4rem;
  padding-right: 4rem;
  position: fixed;
+ z-index: 20;
 }
 nav h1{
     color: #ffffff;
@@ -60,39 +61,109 @@ a.active, a:hover{
 #check{
     display: none;
 }
+
+
 /* End of nav bar */
 .contact-content{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    padding-left: 4rem;
+    top: 0;
+    height: 100vh;
 }
+
 .user-credintials{
     display: flex;
     align-items: center;
     gap: 2rem;
+    border-radius: 10px;
 }
 
 .forms{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 4rem;
-    margin-left: 4 rem ;
+    margin-top: 2rem;
+    margin-left: 1rem ;
     gap: 4rem;
+    position: relative;
+    z-index: 1;
+}
+
+.forms input{
+    padding-left: 1rem;
+    border-radius: 1rem;
+    border: 1px solid var(--main-color);
+}
+
+::placeholder {
+    color: var(--main-color);
+}
+
+.forms textarea{
+    padding-top: 1rem;
+    font-family: "poppins", sans-serif;
+    padding-left: 1rem;
+    border-radius: 1rem;
+    border: 1px solid var(--main-color);
+}
+
+
+.forms button{
+    width: 7vw;
+    height: 5vh;
+    color: var(--main-color);
+    background-color: #fff;
+    border: 1px solid var(--main-color);
+    border-radius: 1rem;
+    margin-left: 4rem;
+    margin-top: 2rem;
+}
+.forms button:hover{
+    background-color: var(--main-color);
+    color: #fff;
 }
 .user-credintials input{
-    width: 20rem;
+    width: 15rem;
     height: 5vh;
 }
 .msg{
     width: 40vw;
     height: 20vh;
-    
+    margin-left: 4rem;
+    color: var(--main-color);
+
 }
+
 .socialss img{
-    width: 30vw;
-    height: 70vh;
+    position: absolute;
+    height: 46rem;
+    width: 56vw;
+    bottom: -1.5rem;
+    right: 0;
+    z-index: 0;
+}
+
+.socialss h3 {
+    position: relative;
+    color: white;
+    font-size: 2rem;
+    top: -2rem;
+    right: 2rem;
+}
+
+.inner-socials {
+    position: relative;
+    display: flex;
+    gap: 4rem;
+    top: 12rem;
+    right: 20rem;
+}
+
+.inner-socials i{
+    color: white;
+    scale: 2;
 }
 
 /* Footer */

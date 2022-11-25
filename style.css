@@ -28,6 +28,7 @@ nav{
  padding-right: 4rem;
  position: fixed;
  z-index: 50;
+ top: 0;
 }
 nav h1{
     color: #ffffff;
@@ -219,7 +220,10 @@ color: #fff;
     flex-direction: column;
     padding: 4rem;
     overflow: hidden;
-    scrollbar-width: ;
+}
+
+.project ::-webkit-scrollbar {
+    display: none;
 }
 
 .project-container {
@@ -231,6 +235,7 @@ color: #fff;
     gap: 4rem;
     padding-right: 17px;
     box-sizing: content-box;
+    scrollbar-width: none;
     
 }
 .project h1{
