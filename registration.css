@@ -74,6 +74,11 @@ form{
 .signuplinks{
     display: flex;
     gap: 0.4rem;
+    
+}
+.signuplinks a{
+    text-decoration: none;
+    color: var(--main-color);
 }
 
 @media only screen and (max-width: 414px) {
