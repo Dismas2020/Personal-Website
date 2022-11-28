@@ -224,3 +224,7 @@ a.active, a:hover{
 .project-navigator i{
     color: var(--second-color);
 }
+
+@media screen and (min-width: 480px){
+    
+}

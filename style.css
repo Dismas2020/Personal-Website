@@ -38,7 +38,7 @@ nav h1{
 }
 nav ul{
     display: flex;
-    gap: 8rem;
+    gap: 6rem;
     align-items: center;
 }
 nav ul li a{
@@ -50,16 +50,19 @@ a.active, a:hover{
     background: #1b9bff;
     transition: .5s;
 }
-.checkbtn{
+
+label #btnn,
+label #cancel{
+    
+    color: white;
     font-size: 30px;
-    color: #fff;
     float: right;
     line-height: 80px;
     margin-right: 40px;
     cursor: pointer;
     display: none;
-}
 
+}
 
 #check{
     display: none;
@@ -151,6 +154,7 @@ color: #fff;
 }
 .skillss{
     display: flex;
+    gap: 0;
 }
 .skillss p{
     font-size: 14px;
@@ -333,3 +337,175 @@ color: #fff;
 .project-navigator i{
     color: var(--second-color);
 }
+
+
+/* MEDIA QUERRIES */
+
+@media (max-width: 1118px) {
+    
+    nav h1{
+       left: 8%;
+    }
+}
+@media (max-width: 944px) {
+    
+    nav h1{
+       left: 6%;
+       top: 20px;
+       width: 130px;
+    }
+
+    nav ul li a{
+        font-size: 17px;
+    }
+    /* end of navbar */
+    .intro h1{
+        margin-top: 1rem;
+        font-size: 32px;
+    }
+    .intro h3{
+        color: #fff;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .ghost img{
+        
+        top: 1rem;
+        scale: 1;
+        right: 1rem;
+        
+     }
+     .image img{
+        position: relative;
+        z-index: 10;
+        border-radius: 40%;
+     }
+
+     .atlp{
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        font-size: 13px;
+        font-weight:bold;
+     }
+     .intro{
+        display: flex;
+        flex-direction: column;
+        gap:2rem;
+        font-family: "poppins", sans-serif;
+    }
+    .intro button{
+        width: 17vw;
+        height: 5vh;
+        border-radius: 20px;
+        background: transparent;
+        border: 1px solid #fff;
+        color: #fff;
+        margin-top: 4rem;
+        }
+        .header{
+            display: flex;
+            align-items: center;
+            /* justify-content: space-between; */
+            padding-left: 4rem;
+            padding-right: 18rem;
+            width: 100%;
+            height: 90vh;
+            background-color: var(--main-color);
+        }
+       
+}
+@media (max-width: 860px) {
+    
+    label #btnn{
+       display:block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--main-color);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin: 50px,0;
+        line-height: 30px; 
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    #check:checked ~  label #btnn{
+        display: none;
+    }
+    #check:checked ~  label #cancel{
+        display: block;
+    }
+    /* end of navigation bar */
+    .intro h1{
+        margin-top: 1rem;
+        font-size: 20px;
+    }
+    .intro h3{
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .ghost img{
+        
+        top: 1rem;
+        scale: 0.8;
+        right: -4rem;
+        
+     }
+     .image img{
+        scale: 0.8;
+        margin-right: 20rem;
+        z-index: 10;
+        border-radius: 40% ;
+     }
+
+     .atlp{
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        font-size: 10px;
+        font-weight:bold;
+     }
+     .intro{
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        font-family: "poppins", sans-serif;
+    }
+    .intro button{
+        width: 30vw;
+        height: 6vh;
+        border-radius: 20px;
+        background: transparent;
+        border: 1px solid #fff;
+        color: #fff;
+        margin-top: 4rem;
+        }
+        .header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 4rem;
+            padding-right: 18rem;
+            width: 100%;
+            height: 90vh;
+            background-color: var(--main-color);
+        }
+        
+}
+
