@@ -28,6 +28,7 @@ nav{
  padding-right: 4rem;
  position: fixed;
  z-index: 50;
+ top: 0px;
 }
 nav h1{
     color: #ffffff;
@@ -81,45 +82,59 @@ label #cancel{
 } */
 
 .about-me{
-    width: 80%;
+    width: 90%;
+    margin-top: 100px;
     padding-left:10rem;
-    display: flex;
+    display: block;
     justify-content: space-between;
     align-items: center;
-   padding-top: 2rem;
+    padding-top: 2rem;
     
     
 }
 .texts{
-    display: flex;
+    display: inline-block;
     flex-direction: column;
     gap: 2rem;
-    width: 30rem;
+    width: 25rem;
+    margin-top: 100px;
     font-family: "poppins", sans-serif;
 }
 .texts h2{
     font-size: 46px;
+    margin-bottom: 20px;
 }
 .texts h4{
     font-size: 24px;
     font-weight: 400;
+    margin-bottom: 15px;
 }
 .texts p{
     color: #5c5b5b;
     font-weight: 300;
 }
+.about-image {
+    float: right;
+    /* display: inline-block; */
+    width: 380px;
+    vertical-align: top;
 
+
+}
 .about-image img{
     
     position: relative;
     z-index: 10;
     border-radius: 40% ;
+    height: 400px;
    
 }
 /* Start of skills section */
 
 .skills-lever{
     display: flex;
+    width: 100%;
+    margin-top: 200px;
     justify-content: space-between;
     padding: 10rem;
     padding-top: 0;
@@ -128,11 +143,14 @@ label #cancel{
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    width: 50%;
 }
-
+.html, .CSS, .Javascript {
+    width: 500px;
+    height: 10px;
+}
 .html {
-    width: 300px;
-    height: 6px;
+
     background-color: var(--second-color);
 }
 .html .percentage{
@@ -147,9 +165,12 @@ label #cancel{
     font-family: "poppins",sans-serif;
     font-size: 20px;
 }
+.rate {
+    margin-right: 70px;
+}
 .CSS {
-    width: 300px;
-    height: 6px;
+
+
     background-color: var(--second-color);
 }
 .CSS .percentage{
@@ -164,16 +185,16 @@ label #cancel{
     font-family: "poppins",sans-serif;
     font-size: 20px;
 }
+.Javascript {
+
+    background-color: var(--second-color);
+}
 .Javascript .percentage{
     width: 85%;
     height: 100%;
     background-color: var(--main-color);
 }
-.Javascript {
-    width: 300px;
-    height: 6px;
-    background-color: var(--second-color);
-}
+
 .Javascript-texts{
     display: flex;
     justify-content: space-between;
@@ -320,4 +341,52 @@ label #cancel{
     #check:checked ~  label #cancel{
         display: block;
     }
+
+    /* end of nav bar */
+    .about-me{
+
+        width: 100%;
+        padding-left:8rem;
+        padding-right: 8rem;
+        
+        justify-content: space-between;
+        align-items: center;
+       padding-top: 2rem;
+    }
+    .texts{
+        margin-top: 400px;
+        width: 90%;
+
+    }
+    .about-image {
+        margin-left: 80px;
+        position: absolute;
+        top: 80px;
+    }
+    .about-image img{
+        display: block;
+        width: 90%;
+        border-radius: 40% ;
+        height: 380px;
+       
+    }
+    .skills-lever{
+        display: block;
+        justify-content: space-between;
+        padding: 10rem 8rem;
+        padding-top: 0;
+        margin-top: 100px;
+    }
+    .skills-lever button{
+        margin-left: 190px;
+    }
+    .fields{
+        display: block;
+        flex-direction: column;
+        row-gap: 0;
+        /* gap: 1rem; */
+    }
+    .footer {
+        display: block;
+    }     
 }
