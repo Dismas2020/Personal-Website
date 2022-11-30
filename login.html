@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login_Form</title>
+    <script src="./login.js"></script>
     <link rel="stylesheet" href="login.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
@@ -21,13 +22,14 @@
             </div>
             
         <form>
-            <input type="text" placeholder="Email:" class="input"><br>
-            <input type="password" placeholder="password:" class = "input">
+            <input type="text" placeholder="Email:" class="input" id="emails"><br>
+            <span class="error" aria-live="polite"></span>
+            <input type="password" placeholder="password:" class = "input" id="passwords" >
         </form>
         
         <div class="links">
             <a href="#" id="forgotpassword">Forgot Password?</a>
-            <a href="./Dashboard.html"><button class="btn">Login</button></a>
+              <button class="btn" onclick="pass()" action = "/">Login</button> 
         </div>
         <div class="signuplinks">
         <p>New to our platform?</p>

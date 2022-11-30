@@ -37,6 +37,24 @@ form{
     flex-direction: column;
     gap: 0.2rem;
 }
+
+
+
+.alert{
+    width: 20vw;
+    height: 8vh; 
+    padding-left: 1rem;
+    border-radius: 5px;
+    border: 1px solid red !important;
+    font-family: "poppins", sans-serif;
+}
+.alert::placeholder{
+    color: red;
+}
+
+
+
+
 .input{
     width: 20vw;
     height: 8vh; 

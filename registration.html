@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration</title>
     <link rel="stylesheet" href="./registration.css">
+    <script src="./registration.js"></script>
 </head>
 <body>
     <div class="main">
@@ -15,13 +16,13 @@
             <div class="signup">
                 <h1>Create Acount!</h1>
                 <form>
-                    <input type="text" placeholder="Email:" class="input"><br>
-                    <input type="text" placeholder="UserName:" class="input"><br>
-                    <input type="password" placeholder="Create password:" class="input">
+                    <input type="text" placeholder="Email:" class="input" id="emails"><br>
+                    <input type="text" placeholder="UserName:" class="input" id="usernames"><br>
+                    <input type="password" placeholder="Create password:" class="input" id="passwords">
                 </form>
             
                 <div class="links">
-                    <button class="btn">Sign-Up</button>
+                    <button class="btn" onclick="pass()" action = "/">Sign-Up</button>
                 </div>
 
                 <div class="signuplinks">
