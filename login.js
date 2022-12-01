@@ -22,6 +22,17 @@ function pass() {
   if (email.value !== "" && password.value !== ""){
     window.location.href = "Dashboard.html";
   }
- 
+
 
 }
+
+// function pass(e) {
+//   event.preventDefault();
+//   const email = document.getElementById("emails").value;
+//   const password = document.getElementById("passwords").value;
+ 
+
+//   const user = localStorage.getItem(email);
+//   const data = JSON.parse(user);
+//   console.log(data);
+// }

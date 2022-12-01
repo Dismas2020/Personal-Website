@@ -10,6 +10,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+
+    <script src="./blog.js"></script>
     <title>Blog</title>
   </head>
   <body>
@@ -65,7 +67,10 @@
                 <div class="article-actions">
                   <div class="like-comment">
                     <div class="likes">
-                      <p class="article-likes">2 likes</p>
+                      <div class="popup" onclick="myFunction()"><p class="article-likes">2 likes</p>
+                        <span class="popuptext" id="myPopup">Please login first!</span>
+                      </div>
+                      
                     </div>
                     <div class="comments">
                       <p class="article-comments">2 comments</p>
