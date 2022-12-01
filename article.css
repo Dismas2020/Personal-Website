@@ -1,0 +1,88 @@
+:root{
+    --main-color : #2C73D2;
+    --second-color : #D9D9D9;
+    --third-color : #333333;
+}
+
+.login-button {
+    background-color: var(--main-color);
+    align-self: center;
+    border-style: none;
+    padding: 0.5rem;
+    height: max-content;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border: 1px solid white;
+    border-radius: 5rem;
+    color: var(--second-color);
+    font-weight: 600;
+    margin-top: 20px;
+}
+.content{
+    margin-top: 8rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.article-text img{
+    width: 40vw;
+    height: 40vh;
+}
+.article-text{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.article-text p{
+    width: 40vw;
+}
+.said{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+}
+.said input{
+    width: 18vw;
+    height: 5vh;
+    border: 1px solid var(--main-color);
+    border-radius: 5px;
+}
+.said input::placeholder{
+    color: var(--main-color);
+}
+.said textarea{
+    width: 18vw;
+    height: 15vh;
+    border: 1px solid var(--main-color);
+    border-radius: 5px;
+   
+}
+.said textarea::placeholder{
+    color: var(--main-color);
+}
+button{
+    width: 5vw;
+    height: 4vh;
+    background-color: #fff;
+    border: 1px solid var(--main-color);
+    border-radius: 5px;
+    color: var(--main-color);
+    margin-left: 36rem;
+}
+button:hover{
+    background-color: var(--main-color);
+    color: #fff;
+    border: 1px solid #fff;
+}
+.comments-section{
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 5rem;
+    margin-left: 10rem;
+}
+
+

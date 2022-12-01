@@ -111,6 +111,10 @@
     padding-left: 1rem;
     padding-right: 1rem;
 }
+.article-read-button a{
+    text-decoration: none;
+    color: #fff;
+}
 
 /* Popup container - can be anything you want */
 .popup {
